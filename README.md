@@ -3,10 +3,14 @@ my first ui library
 
 #Documentation
 
-```local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/quivings/CMDLibrary/main/src"))()```
+```
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/quivings/CMDLibrary/main/src"))()
+```
 
 #Creating the window
-```local Window = Library:Create({Title = "CMD"})```
+```
+local Window = Library:Create({Title = "CMD"})
+```
 
 #UI Elements
 
