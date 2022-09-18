@@ -28,11 +28,17 @@ local Toggle = Tab:CreateToggle({
     end
 })
 ```
+
+**Dropdowns**
+```
 local Dropdown = Tab:CreateDropdown({
     Title = "Dropdown",
     KeepValue = true -- If you have KeepValue on, it will Keep the option selected. If KeepValue is off, the dropdown option will still work as normal. More of a visual thing.
 })
+```
 
+**Dropdown Options**
+```
 local DropdownOption = Dropdown:MakeOption({
     Text = "Option",
     callback = function(v) -- Returns the Dropdown option
