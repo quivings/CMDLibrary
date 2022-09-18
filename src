@@ -1244,3 +1244,4 @@ function Library:Create(options)
 	end
 	return GUI
 end
+return Library
