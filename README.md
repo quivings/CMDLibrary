@@ -17,7 +17,7 @@ local Window = Library:Create({Title = "CMD"})
 ```
 local Tab = Window:CreateTab({
     Icon = "rbxassetid://" -- Roblox Icon Id's go here; there are no tab titles.
-)}
+})
 ```
 
 **Toggles**
