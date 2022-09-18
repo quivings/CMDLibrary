@@ -31,6 +31,9 @@ function Library:Tween(obj, goal, callback)
 end
 
 function Library:Create(options)
+	if game.CoreGui:FindFirstChild("CMDLibrary") then
+		game.CoreGui.CMDLibrary:Destroy()
+	end
 	--Validation
 	
 	local options = Library:Validate({
