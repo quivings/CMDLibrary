@@ -16,7 +16,7 @@ local Library = {}
 
 function Library:Validate(defaults, options)
 	local options = options or {}
-	for i,v in defaults do
+	for i,v in pairs(defaults) do
 		if options[i] == nil then
 			options[i] = v
 		end
@@ -225,7 +225,7 @@ function Library:Create(options)
         	end
         end)
 
-        UserInputService.InputChanged:Connect(function(input)
+        UIS.InputChanged:Connect(function(input)
         	if input == dragInput and dragging then
         		update(input)
         	end
