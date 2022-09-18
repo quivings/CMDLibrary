@@ -1,18 +1,18 @@
 # CMDLibrary
 my first ui library 
 
-#Documentation
+# Documentation
 
 ```
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/quivings/CMDLibrary/main/src"))()
 ```
 
-#Creating the window
+# Creating the window
 ```
 local Window = Library:Create({Title = "CMD"})
 ```
 
-#UI Elements
+# UI Elements
 
 ```
 local Tab = Window:CreateTab({
@@ -62,7 +62,7 @@ local Slider = Tab:CreateSlider({
    end)
 ```
 
-#Chat commands
+# Chat commands
 
 ```
 Library:CreateChatCommand(";", "print", "p", function(msg) -- Prefix, Command Name, Command Alias, and the command function. can take up to a maximum of three args
